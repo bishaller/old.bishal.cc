@@ -8,7 +8,7 @@
 :root {
     --white: #ffffff;
     --black: #000000;
-    --dark: #21242B;
+    --dark: #0D1014;
 
     //Style Colors
     --screen: #E1E8EE;
@@ -64,8 +64,10 @@ $cf-border-focus: #111111;
 
 // Fonts
 $ff-alt: 'Apercu Pro', sans-serif;
+$ff-alt-bold: 'Apercu Pro Bold', sans-serif;
 $ff-alt-black: 'Apercu Pro Black', sans-serif;
 $ff-primary: 'Casus Pro', sans-serif;
+$ff-primary-italic: 'Casus Pro Italic', sans-serif;
 $ff-default: $ff-primary;
 
 // Typography

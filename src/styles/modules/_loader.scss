@@ -14,12 +14,12 @@
 
 .siteLoader__intro {
     position: relative;
-    font: 10.5vw/1 extrabold;
+    font: 10.5vw/1 bold;
     text-align: center;
     width: 100%;
     line-height: 1.2;
-    letter-spacing: -.14vw;
-    font-family: $ff-alt-black;
+    letter-spacing: -.9vw;
+    font-family: $ff-alt-bold;
 
     @media #{$header} {
         @include fsz(48px);
@@ -38,6 +38,14 @@
     background: linear-gradient(to right, rgba(0,255,244,1) 0%, rgba(200,0,255,1) 74%, rgba(255,0,112,1) 100%);
     background: -webkit-linear-gradient(to right, rgba(0,255,244,1) 0%, rgba(200,0,255,1) 74%, rgba(255,0,112,1) 96%);
     background-position: top right;
+    background-size: 110%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: 50vw;
+}
+
+.siteLoader__intro .siteLoader__word-2 {
+    font-family: $ff-primary-italic;
+    font-style: italic;
+    font-weight: normal;
 }
