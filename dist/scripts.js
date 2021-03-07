@@ -217,7 +217,7 @@ function(a){a=P(a);for(var c=v.length;c--;)for(var d=v[c],b=d.animations,f=b.len
                 this.DOM.product.addEventListener('click', () => this.open());
             }
             open() {
-                document.getElementById('id1').style.overflow = 'hidden auto';
+                document.getElementById('mainID').style.overflow = 'hidden auto';
                 this.DOM.product.classList.add('grid__cardInner--hide');
                 DOM.details.fill(this.info);
                 DOM.details.open({

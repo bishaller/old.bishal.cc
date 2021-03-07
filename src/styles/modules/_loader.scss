@@ -22,7 +22,8 @@
     font-family: $ff-alt-black;
 
     @media #{$header} {
-        @include fsz(24px);
+        @include fsz(48px);
+        letter-spacing: -1px;
     }
 }
 
@@ -31,7 +32,7 @@
     margin: auto;
     right: 50%;
     font-kerning: none;
-    color: pink;
+    color: $c-white;
     transform: translate(-75%, -50%);
     opacity: 0;
     background: linear-gradient(to right, rgba(0,255,244,1) 0%, rgba(200,0,255,1) 74%, rgba(255,0,112,1) 100%);

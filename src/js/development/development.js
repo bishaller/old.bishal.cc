@@ -185,7 +185,7 @@
                 this.DOM.product.addEventListener('click', () => this.open());
             }
             open() {
-                document.getElementById('id1').style.overflow = 'hidden auto';
+                document.getElementById('mainID').style.overflow = 'hidden auto';
                 this.DOM.product.classList.add('grid__cardInner--hide');
                 DOM.details.fill(this.info);
                 DOM.details.open({

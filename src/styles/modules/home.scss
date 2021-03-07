@@ -3,30 +3,6 @@
     position: relative;
 }
 
-.intro {
-    position: relative;
-    font-size: 2.5vw;
-    text-align: center;
-    font-weight: normal;
-    width: 100%;
-    line-height: 1.2;
-    height: 72px;
-    font-family: $ff-alt;
-
-    @media #{$header} {
-        @include fsz(24px);
-    }
-}
-.intro .letters {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    top: 0;
-    right: 0;
-    opacity: 1;
-    color: rgba($c-black, 1);
-    opacity: 0;
-}
 
 // Background
 main {
