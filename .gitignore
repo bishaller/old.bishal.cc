@@ -1,0 +1,105 @@
+.htaccess
+style.css.map
+.DS_STORE
+.well-known
+.ftpquota
+license.txt
+LICENSE
+LICENSE.MD
+change_log.txt
+sitemap.xml
+sitemap.xml.gz
+
+# NPM #
+##########
+# Ignore all directories called node_modules in current folder and any subfolders.
+node_modules/
+/node_modules/
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+*.map
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.env
+
+# OS generated files #
+######################
+**.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+**/.sass-cache
+**/.sass-cache/*
+**/.map
+
+# Composer #
+##########
+!assets/js/vendor/
+wpcs/
+/vendor/
+
+# Bower #
+##########
+assets/bower_components/*
+
+# Codekit #
+##########
+/codekit-config.json
+*.codekit
+**.codekit-cache/*
+
+# Compiled Files and Build Dirs #
+##########
+/README.html
+
+# PhpStrom Project Files #
+##########
+.idea/
+
+
+error_log
+library/vendors/composer
+assets/img/.DS_Store
+
+
+# WordPress Related Files #
+##########
+wp-config.php
+wp-content/uploads/
+wp-admin/error_log
+wp-includes/error_log
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/backups/
+wp-content/w3tc-config
+wp-content/htaccess.backup
+wp-content/wp-rocket-config
+wp-content/plugins/mu-plugins
+wp-content/plugins/worker
+wp-content/db.php
+_archive
