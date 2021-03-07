@@ -1,74 +1,85 @@
     let intro = {};
     intro.opacityIn = [0,1];
-    intro.scaleIn = [0, 1];
-    intro.scaleOut = 5;
-    intro.durationIn = 700;
-    intro.durationOut = 600;
-    intro.delay = 300;
+    intro.translateIn = ['25%','50%'];
+    intro.translateOut = ['50%','60%'];
+    intro.translateY = ['-50%','-50%'];
+    intro.durationIn = 500;
+    intro.durationOut = 300;
+    intro.delay = 100;
+    intro.easing = "easeInOutQuad";
     
     anime.timeline()
       .add({
-        targets: '.intro .letters-1',
-        // opacity: intro.opacityIn,
-        opacity: 1,
-        scale: intro.scaleIn,
+        targets: '.siteLoader__intro .siteLoader__word-1',
+        opacity: intro.opacityIn,
         duration: intro.durationIn,
+        opacity: 1,
+        translateX: intro.translateIn,
+        translateY: intro.translateY,
         delay: 0,
+        easing: intro.easing,
       }).add({
-        targets: '.intro .letters-1',
+        targets: '.siteLoader__intro .siteLoader__word-1',
         opacity: 0,
-        scale: intro.scaleOut,
+        easing: intro.easing,
         duration: intro.durationOut,
-        easing: "easeInExpo",
-        delay: intro.delay
+        delay: intro.delay,
+        color: '#FFF',
+        '-webkit-text-fill-color': '#FFF',
       }).add({
-        targets: '.intro .letters-2',
-        // opacity: intro.opacityIn,
+        targets: '.siteLoader__intro .siteLoader__word-2',
+        opacity: intro.opacityIn,
         opacity: 1,
-        scale: intro.scaleIn,
-        duration: intro.durationIn
+        translateX: intro.translateIn,
+        translateY: intro.translateY,
+        easing: intro.easing,
+        duration: intro.durationIn,
       }).add({
-        targets: '.intro .letters-2',
+        targets: '.siteLoader__intro .siteLoader__word-2',
         opacity: 0,
-        scale: intro.scaleOut,
+        easing: intro.easing,
         duration: intro.durationOut,
-        easing: "easeInExpo",
-        delay: intro.delay
+        delay: intro.delay,
+        color: '#FFF',
+        '-webkit-text-fill-color': '#FFF',
       }).add({
-        targets: '.intro .letters-3',
-        // opacity: intro.opacityIn,
+        targets: '.siteLoader__intro .siteLoader__word-3',
+        opacity: intro.opacityIn,
         opacity: 1,
-        scale: intro.scaleIn,
-        duration: intro.durationIn
+        translateX: intro.translateIn,
+        translateY: intro.translateY,
+        easing: intro.easing,
+        duration: intro.durationIn,
       }).add({
-        targets: '.intro .letters-3',
+        targets: '.siteLoader__intro .siteLoader__word-3',
         opacity: 0,
-        scale: intro.scaleOut,
+        easing: intro.easing,
         duration: intro.durationOut,
-        easing: "easeInExpo",
-        delay: 20
+        delay: intro.delay,
+        color: '#FFF',
+        '-webkit-text-fill-color': '#FFF',
       }).add({
-        targets: '.intro',
+        targets: '.siteLoader__intro',
         opacity: 0,
         duration: 20,
       }).add({
             targets: 'main',
             width: '100%',
-            duration: 750,
-            easing: 'easeOutExpo',
+            duration: 500,
+            easing: 'easeInOutQuad',
       }, '-=1250').add({ 
             targets: '.grid__card',
             height: '100%',
             opacity: 1,
             translateY: ['50%', '0%'],
             duration: 600,
-            easing: 'easeOutExpo',
+            easing: 'easeInOutQuad',
         }, '+=200').add({
             targets: '.grid__title, .grid__image',
             duration: 600,
             translateX: ['-60%', '0'],
             opacity: 1,
-            easing: 'easeOutExpo',
+            easing: 'easeInOutQuad',
         }, '+=100');
     
         class Details {

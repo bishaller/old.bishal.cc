@@ -7,6 +7,15 @@
     font-display: fallback; /* Define how the browser behaves during download */
 }
 
+@font-face {
+    font-family: 'Apercu Pro Black';
+    src: url('../src/fonts/ApercuPro-Black.woff2') format('woff2'),
+        url('../src/fonts/ApercuPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: fallback; /* Define how the browser behaves during download */
+}
+
 
 @font-face {
     font-family: 'Casus Pro';

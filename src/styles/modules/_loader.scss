@@ -1,0 +1,42 @@
+.siteLoader {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: $c-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.siteLoader__intro {
+    position: relative;
+    font: 10.5vw/1 extrabold;
+    text-align: center;
+    width: 100%;
+    line-height: 1.2;
+    letter-spacing: -.14vw;
+    font-family: $ff-alt-black;
+
+    @media #{$header} {
+        @include fsz(24px);
+    }
+}
+
+.siteLoader__intro .siteLoader__word {
+    position: absolute;
+    margin: auto;
+    right: 50%;
+    font-kerning: none;
+    color: pink;
+    transform: translate(-75%, -50%);
+    opacity: 0;
+    background: linear-gradient(to right, rgba(0,255,244,1) 0%, rgba(200,0,255,1) 74%, rgba(255,0,112,1) 100%);
+    background: -webkit-linear-gradient(to right, rgba(0,255,244,1) 0%, rgba(200,0,255,1) 74%, rgba(255,0,112,1) 96%);
+    background-position: top right;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

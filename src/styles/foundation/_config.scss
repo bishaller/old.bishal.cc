@@ -8,6 +8,7 @@
 :root {
     --white: #ffffff;
     --black: #000000;
+    --dark: #21242B;
 
     //Style Colors
     --screen: #E1E8EE;
@@ -23,6 +24,9 @@ $c-red: #FF0000;
 $c-screen: var(--screen);
 $c-hr: var(--hr);
 $c-text-screen: var(--text-screen);
+
+// Project Colors
+$c-dark: var(--dark);
 
 // Text & Background Colors
 $c-text: $c-black;
@@ -60,6 +64,7 @@ $cf-border-focus: #111111;
 
 // Fonts
 $ff-alt: 'Apercu Pro', sans-serif;
+$ff-alt-black: 'Apercu Pro Black', sans-serif;
 $ff-primary: 'Casus Pro', sans-serif;
 $ff-default: $ff-primary;
 
