@@ -1,0 +1,48 @@
+// button,
+// .button {
+//     -webkit-appearance: none;
+//     text-decoration: none;
+//     box-shadow: none;
+//     letter-spacing: 0;
+//     border: 0;
+//     font-family: $ff-alt;
+//     font-weight: 500;
+//     background-color: $cb-background;
+//     @include fsz(18px);
+//     line-height: 1.1;
+//     border-radius: 2px;
+//     padding: 12px 30px;
+//     @include easeout;
+//     color: $c-white;
+//     pointer-events: all;
+//     cursor: pointer;
+//     display: inline-block;
+
+//     @media #{$phone} {
+//         @include fsz(16px);
+//         padding: 10px 25px;
+//     }
+
+//     @media #{$phone-portrait} {
+//         padding: 10px 20px;
+//     }
+
+//     &:hover, &:focus {
+//         @include easein;
+//         background-color: darken($cb-background, 10%);
+//         color: $c-white;
+//         box-shadow: 0 10px 25px -5px rgba($c-black, .25);
+//     }
+// }
+
+// .button--border {
+//     background: transparent;
+//     color: $cb-background;
+//     border: 1px solid $cb-background;
+
+//     &:hover, &:focus {
+//         background-color: $cb-background;
+//         color: $c-white;
+//         box-shadow: 0 10px 25px -5px rgba($c-black, .25);
+//     }
+// }

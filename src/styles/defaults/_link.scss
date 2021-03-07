@@ -1,0 +1,15 @@
+a {
+	color: $c-link;
+	@include easeout;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $c-link-hover;
+		@include easein;
+	}
+
+	&:visited {
+		color: $c-link-visited;
+	}
+}
