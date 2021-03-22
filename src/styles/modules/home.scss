@@ -265,3 +265,14 @@ main {
         @include fsz(14px);
     }
 }
+
+
+#gradient-canvas {
+    width:100%;
+    height:100%;
+    --gradient-color-1: #17DCBC; 
+    --gradient-color-2: #C34CA3; 
+    --gradient-color-3: #FD4D87;  
+    --gradient-color-4: #FC8375;
+    --gradient-color-5: #A23FC3;
+  }

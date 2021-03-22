@@ -92,7 +92,8 @@ gulp.task('clearCache', function() {
     // Still pass the files to clear cache for
     gulp.src(themePath + '**/**/**/*.scss');
     gulp.src(themePath + '**/**/*.html');
-    gulp.src(themePath + '**/**/*.php')
+    gulp.src(themePath + '**/**/*.php');
+    gulp.src(themepath + '**/*.css')
       .pipe(cache.clear());
   
     // Or, just call this for everything
