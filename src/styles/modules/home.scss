@@ -1,13 +1,14 @@
 #page {
     overflow: hidden;
     position: relative;
+    height: 100%;
 }
 
 
 // Background
 main {
-    background-color: #FF2277;
-    background-image: linear-gradient(0deg, rgba(0,221,176,1) 0%, rgba(0,221,176,0) 35%), radial-gradient(circle at 15.09% 35.22%, #FF2277, rgba(255, 70, 131, 0) 36%), radial-gradient(circle at 5.49% 87.64%, #FF6860, rgba(255, 104, 96, 0) 63%), radial-gradient(circle at 34.53% 61.69%, #FF675D, rgba(255, 104, 96, 0) 51%), radial-gradient(circle at 91.35% 16.48%, #E6298F, rgba(255, 104, 96, 0) 100%), radial-gradient(circle at 83.12% 46.55%, #CD34CB, transparent 62%), radial-gradient(circle at 52.77% 80.12%, #FF2C90, transparent 100%), radial-gradient(circle at 62.19% 11.02%, #FF2277, transparent 43%), radial-gradient(circle at 46.45% 38.11%, #FF675D, transparent 39%), radial-gradient(circle at 89.45% 82.08%, #D45BA5, transparent 100%), radial-gradient(circle at 1.85% 5.15%, #FF2277, transparent 100%), radial-gradient(circle at 50% 50%, #FF2277, #FF2277 100%);
+    // background-color: #FF2277;
+    // background-image: linear-gradient(0deg, rgba(0,221,176,1) 0%, rgba(0,221,176,0) 35%), radial-gradient(circle at 15.09% 35.22%, #FF2277, rgba(255, 70, 131, 0) 36%), radial-gradient(circle at 5.49% 87.64%, #FF6860, rgba(255, 104, 96, 0) 63%), radial-gradient(circle at 34.53% 61.69%, #FF675D, rgba(255, 104, 96, 0) 51%), radial-gradient(circle at 91.35% 16.48%, #E6298F, rgba(255, 104, 96, 0) 100%), radial-gradient(circle at 83.12% 46.55%, #CD34CB, transparent 62%), radial-gradient(circle at 52.77% 80.12%, #FF2C90, transparent 100%), radial-gradient(circle at 62.19% 11.02%, #FF2277, transparent 43%), radial-gradient(circle at 46.45% 38.11%, #FF675D, transparent 39%), radial-gradient(circle at 89.45% 82.08%, #D45BA5, transparent 100%), radial-gradient(circle at 1.85% 5.15%, #FF2277, transparent 100%), radial-gradient(circle at 50% 50%, #FF2277, #FF2277 100%);
     width: 0;
     position: relative;
     overflow: hidden;
@@ -23,6 +24,10 @@ main {
         opacity: .04;
         z-index: 1;
     }
+
+    // &.isLoaded {
+    //     height: 100%;
+    // }
 }
 
 
@@ -270,6 +275,7 @@ main {
 #gradient-canvas {
     width:100%;
     height:100%;
+    position: absolute;
     --gradient-color-1: #17DCBC; 
     --gradient-color-2: #C34CA3; 
     --gradient-color-3: #FD4D87;  

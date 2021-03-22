@@ -683,6 +683,7 @@ function normalizeColor(hexCode) {
             }
             open() {
                 document.getElementById('mainID').style.overflow = 'hidden auto';
+                document.getElementById('mainID').style.height = '100%';
                 this.DOM.product.classList.add('grid__cardInner--hide');
                 DOM.details.fill(this.info);
                 DOM.details.open({
