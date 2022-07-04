@@ -1,5 +1,5 @@
-
 import * as React from "react";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Billboard = ({title, description, linkData}) => {
     function createHTML(props) {
@@ -22,19 +22,13 @@ const Billboard = ({title, description, linkData}) => {
                             className="billboard__description"
                             dangerouslySetInnerHTML={createHTML(description)}
                         />
-                        <a
-                            className="buttonSpecial buttonSpecial--alt"
-                            title="hello@bishal.cc"
-                            href="mailto:hello@bishal.cc"
-                        >
-                            Contact me via Mail.
-                        </a>
 
-                        {/* {linkData.map((linkdata) => {
+
+                        {linkData.map((linkdata) => {
               return (
                 <AniLink
                   cover
-                  bg="#D4DAE1"
+                  bg="#FF3B5B"
                   duration={1}
                   to={linkdata.linkUrl}
                   key={linkdata.linkUrl}
@@ -57,7 +51,7 @@ const Billboard = ({title, description, linkData}) => {
                   </span>
                 </AniLink>
               );
-            })} */}
+            })}
                     </div>
                 </div>
             </div>
