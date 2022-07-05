@@ -97,7 +97,7 @@ button,
         position: relative;
         border-bottom: 2px solid transparent;
         transition: all 250ms ease-out;
-        --specialFontSize: clamp(1rem, 2vw, 1.25rem);
+        --specialFontSize: clamp(1rem, 2vw, .875rem);
         --specialLineHeight: 1;
         letter-spacing: 0;
         font: 700 var(--specialFontSize)/var(--specialLineHeight) var(--ff-defaultBold);
